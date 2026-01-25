@@ -4,7 +4,7 @@
 * URI introduced in PHP 8.5.0 (November 20, 2025).
 
 * [HTMLDocument](docs/index.md)
-* [URI](docs/uri.md)]
+* [Working with URI](docs/uri.md)]
 
 * [Future 2026 presentations](presentations_2026.md)
 
