@@ -1,0 +1,41 @@
+{
+    "name": "phpbergen/htmldocument",
+    "description": "PHP HTMLDocument presentation and demonstration",
+    "homepage": "https://github.com/PHP-Bergen",
+    "authors": [
+        {
+            "name": "Helge Notø",
+            "email": "helge@oneiros.no"
+        },
+        {
+            "name": "Stein Magne Bjørklund",
+            "email": "steinmb@smbjorklund.com"
+        }
+    ],
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.5",
+        "masterminds/html5": "^2.10"
+    },
+    "config": {
+        "platform": {
+            "php": "8.5"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "phpbergen\\htmldocument\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phpbergen\\Tests\\": "tests"
+        }
+    },
+    "require-dev": {
+        "phpstan/phpstan": "2.1.x-dev",
+        "phpunit/phpunit": "^12"
+    }
+}
