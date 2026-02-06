@@ -10,7 +10,7 @@
 
 use Masterminds\HTML5;
 
-require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 $html = <<< 'HTML'
     <!DOCTYPE html>
