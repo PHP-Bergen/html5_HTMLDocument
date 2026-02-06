@@ -1,11 +1,8 @@
 # HTML5 - PHP Bergen
 
-* `Dom\HTMLDocument` introduced in PHP 8.4.
-* URI introduced in PHP 8.5.0 (November 20, 2025).
+Dom\HTMLDocument was introduced in PHP 8.4, and URI introduced in PHP 8.5.0 (November 20, 2025).
 
-* [HTMLDocument](docs/index.md)
-* [Working with URI](docs/uri.md)
-
+* [Presentation](docs/index.md)
 * [Future 2026 presentations](presentations_2026.md)
 
 ## References
