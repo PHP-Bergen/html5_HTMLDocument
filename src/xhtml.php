@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Older PHP then PHP 8.4.
+ * XHTML PHP 8.4 and older.
  */
 
 $html = <<<HTML
