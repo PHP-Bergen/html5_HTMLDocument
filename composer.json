@@ -19,7 +19,8 @@
     "php": ">=8.5",
     "masterminds/html5": "^2.10",
     "ext-libxml": "*",
-    "ext-dom": "*"
+    "ext-dom": "*",
+    "ext-uri": "*"
   },
   "config": {
     "platform": {

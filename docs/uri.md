@@ -1,5 +1,22 @@
-# URI Parsing API
+# Intro
 
+URIs and URLs are one of the most fundamental concepts of the web because they make it possible to reference specific resources on a network. 
+
+* RFC 3986 (URL + URI): Followed by web browsers.
+* [WHATWG URL](https://url.spec.whatwg.org/#title)
+
+## URIs, IRIs, URLs, URNs
+
+* IRI: A superset of URIs defined by RFC 3987 which allows Unicode characters to be used, therefore supporting IDNA (internationalized domain names): `https://bjørklund.com` `https://zh.wikipedia.org/wiki/中文`
+* URI: A unique identifier that relates to an abstract or physical resource: `mailto:steinmb@phpbergen.no`
+* URL (Uniform Resource Locator): A subset of URIs that specify their location: `https://phpbergen.no`
+* URN: A subset of URIs that are globally unique within defined namespaces (e.g. urn:isbn:0451450523)
+
+<img src="images/iri_venn_diagramm.svg" alt="URL Parsing API" width="600">
+The image is reused from https://wiki.selfhtml.org/wiki/URN.
+
+## URI Parsing API
+            
 Introduced in PHP 8.5.
 
 An RFC 3986 and WHATWG URL compliant API. WHATWG uses Lexbor.
@@ -20,11 +37,8 @@ This is what is followed by web browsers.
 
 ### RFC 3986
 
-Is the original URI standard from 2005. Gave up on RFC 3987. these two commonly used standards are incompatible with each other.
-
-## IRI (Internationalized Resource Identifier)
-
-<img src="images/iri_venn_diagramm.svg" alt="URL Parsing API" width="600">
+* Is the original URL standard RFC 1738. Gave up on RFC 3987. 
+* These two commonly used standards are incompatible with each other.
 
 ## Examples
 
