@@ -4,6 +4,10 @@
 
 Only supports HTML up to version 4.01 (XHTML). Uses libxml2 HTML parser under the hood to parse these documents into a libxml2 document tree that ext/dom uses.
 
+## Userspace solutions [HTML5-PHP](https://github.com/Masterminds/html5-php)
+
+HTML5-PHP is a standards-compliant HTML5 parser and writer written entirely in PHP. It is stable and used in many production websites and has well over five million downloads.
+
 ### The DOMDocument class
 
 https://www.php.net/manual/en/class.domdocument.php
