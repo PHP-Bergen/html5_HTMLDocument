@@ -37,6 +37,7 @@ A [living standard](https://url.spec.whatwg.org/#title), this is what is followe
 
 * Is the original URL standard RFC 1738. Gave up on RFC 3987. 
 * These two commonly used standards are incompatible with each other.
+* PHP uses [uriparser](https://uriparser.github.io) tjat is a strictly RFC 3986 compliant URI parsing and handling library written in C99.
 
 ## Examples
 
