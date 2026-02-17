@@ -8,11 +8,7 @@ Only supports HTML up to version 4.01 (XHTML). Uses libxml2 HTML parser under th
 
 Masterminds HTML5-PHP is a standards-compliant An HTML5 parser and serializer. Written entirely in PHP.
 
-* Installs: 232 912 616 (packagist.org)
-* symfony/symfony 
-* drupal/core 
-* typo3/cms-core
-* Laravel
+Used on a lot of applications, example: symfony/symfony , drupal/core, typo3/cms-core, Laravel and many more. Installs: 232 912 616 (packagist.org)
 
 ### PHP DOMDocument class
 
