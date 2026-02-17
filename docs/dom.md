@@ -25,16 +25,15 @@ Deprecated since PHP 8.4.0.
 
 DOM HTML5 parsing and serialization. The DOM extension in PHP is used to parse, query, and manipulate XML/HTML documents. HTML5 support, CSS selectors, and modern DOM features to PHP.
 
-* PHP uses Lexbor, written in C. https://lexbor.com/
+* PHP uses https://lexbor.com/, written in C. 
 * https://wiki.php.net/rfc/domdocument_html5_parser
-* https://wiki.php.net/rfc/dom_additions_84 - CSS selector support. No longer need to use XPath.
+* https://wiki.php.net/rfc/dom_additions_84 - CSS selector support. No longer need to use XPath. Enabled by a Lexbor submodule.
 * https://wiki.php.net/rfc/opt_in_dom_spec_compliance
 
-```php
-createEmpty()
-createFromFile()
-createFromString()
-```
+### [examples](dom_usage.md)
+
+
+## References
 
 * Lexbor, written in C. https://lexbor.com/
 * https://blog.keyvan.net/p/parsing-html-with-php-84

@@ -13,7 +13,6 @@ namespace Phpbergen\Php84;
  */
 $dom = new \DOMDocument('1.0', 'UTF-8');
 print_r($dom->saveXML());
-$old_xml = $dom->saveXML();
 
 /**
  * PHP 8.4 and newer.
