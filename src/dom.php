@@ -11,12 +11,12 @@ namespace Phpbergen\Php84;
  *
  * https://www.php.net/manual/en/domdocument.construct.php
  */
-$dom = new \DOMDocument('1.0', 'iso-8859-1');
+$dom = new \DOMDocument('1.0', 'UTF-8');
 print_r($dom->saveXML());
 $old_xml = $dom->saveXML();
 
 /**
- * PHP 8.4
+ * PHP 8.4 and newer.
  *
  * DOM HTML5 parsing and serialization.
  * The DOM extension in PHP is used to parse, query, and manipulate
@@ -42,7 +42,7 @@ $dom = HTMLDocument::createFromString(
   LIBXML_NOERROR,
 );
 
-var_dump($old_xml === $dom->saveXML());
 print_r($dom->saveXML());
 print_r($dom->saveHtml());
+
 echo $dom->querySelector('main')->textContent;
