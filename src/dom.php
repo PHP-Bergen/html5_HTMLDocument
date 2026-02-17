@@ -11,8 +11,8 @@ namespace Phpbergen\Php84;
  *
  * https://www.php.net/manual/en/domdocument.construct.php
  */
-$dom = new \DOMDocument('1.0', 'UTF-8');
-print_r($dom->saveXML());
+//$dom = new \DOMDocument('1.0', 'UTF-8');
+//print_r($dom->saveXML());
 
 /**
  * PHP 8.4 and newer.
@@ -41,7 +41,7 @@ $dom = HTMLDocument::createFromString(
   LIBXML_NOERROR,
 );
 
-print_r($dom->saveXML());
+//print_r($dom->saveXML());
 print_r($dom->saveHtml());
 
-echo $dom->querySelector('main')->textContent;
+//echo $dom->querySelector('main')->textContent;

@@ -4,11 +4,15 @@
 
 Only supports HTML up to version 4.01 (XHTML). Uses libxml2 HTML parser under the hood to parse these documents into a libxml2 document tree that ext/dom uses.
 
-### Userspace solutions [HTML5-PHP](https://github.com/Masterminds/html5-php)
+### Userspace solutions [masterminds/html5](https://github.com/Masterminds/html5-php)
 
-Masterminds HTML5-PHP is a standards-compliant HTML5 parser and writer written entirely in PHP. It is stable and used in many production websites and has well over five million downloads.
+Masterminds HTML5-PHP is a standards-compliant An HTML5 parser and serializer. Written entirely in PHP.
 
-*  Installs: 232 912 616 (packagist.org)
+* Installs: 232 912 616 (packagist.org)
+* symfony/symfony 
+* drupal/core 
+* typo3/cms-core
+* Laravel
 
 ### PHP DOMDocument class
 
