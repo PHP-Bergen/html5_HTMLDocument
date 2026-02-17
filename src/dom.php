@@ -12,7 +12,8 @@ namespace Phpbergen\Php84;
  * https://www.php.net/manual/en/domdocument.construct.php
  */
 $dom = new \DOMDocument('1.0', 'iso-8859-1');
-var_dump($dom->saveXML());
+print_r($dom->saveXML());
+$old_xml = $dom->saveXML();
 
 /**
  * PHP 8.4
@@ -40,4 +41,8 @@ $dom = HTMLDocument::createFromString(
         HTML,
   LIBXML_NOERROR,
 );
-var_dump($dom->saveXML());
+
+var_dump($old_xml === $dom->saveXML());
+print_r($dom->saveXML());
+print_r($dom->saveHtml());
+echo $dom->querySelector('main')->textContent;
