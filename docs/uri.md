@@ -31,7 +31,6 @@ A [living standard](https://url.spec.whatwg.org/#title), this is what is followe
 
 * Lexbor - Added to PHP 8.4
 * PHP uses Lexbor, written in C. https://lexbor.com/
-* HTML5 support, CSS selectors, and modern DOM features to PHP.
 
 ### RFC 3986
 
