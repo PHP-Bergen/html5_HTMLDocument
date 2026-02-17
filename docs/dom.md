@@ -20,8 +20,8 @@ Masterminds HTML5-PHP is a standards-compliant An HTML5 parser and serializer. W
 $dom = new \DOMDocument('1.0', 'UTF-8');
 ```
 
-https://www.php.net/manual/en/class.domdocument.php
-https://www.php.net/manual/en/domdocument.construct.php
+* https://www.php.net/manual/en/class.domdocument.php
+* https://www.php.net/manual/en/domdocument.construct.php
 
 Deprecated since PHP 8.4.0.
 
