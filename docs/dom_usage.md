@@ -1,5 +1,13 @@
 ## DOM Usage
 
+Create DOM from something. This is where you start.
+
+```php
+HTMLDocument::createEmpty();
+HTMLDocument::createFromFile();
+HTMLDocument::createFromString();
+```
+
 ```php
 $dom = HTMLDocument::createFromString(
   <<<HTML
@@ -55,18 +63,6 @@ print_r($dom->saveHtml())
     }
     return '';
   }
-```
-
-```php
-DOM\Document; 
-DOM\XMLDocument;
-DOM\HTMLDocument;
-```
-
-```php
-createEmpty()
-createFromFile()
-createFromString()
 ```
 
 ### [> Home](../README.md) > [Index](index.md)
