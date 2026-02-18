@@ -14,6 +14,12 @@ Used on a lot of applications, example: symfony/symfony , drupal/core, typo3/cms
 
 ```php
 $dom = new \DOMDocument('1.0', 'UTF-8');
+
+// Select element by ID.
+$element = $xpath->query('//div[@id="main-content"]');
+
+// Select by attribute contains.
+$partialClass = $xpath->query('//div[contains(@class, "article")]');
 ```
 
 * https://www.php.net/manual/en/class.domdocument.php
