@@ -28,6 +28,34 @@ print_r($dom->saveHtml())
 </html>
 ```
 
+## www.uib.no
+
+```php
+  /**
+   * Returns title from DOM metadata.
+   *
+   * @param \Dom\HTMLDocument $dom
+   *   DOM node to be parsed.
+   *
+   * @return string
+   *   Meta title or an empty string if not present.
+   */
+  private function getTitle(HTMLDocument $dom): string {
+    $meta_node = $dom->getElementsByTagName('meta');
+    for ($i = 0; $i < $meta_node->length; $i++) {
+      $item = $meta_node->item($i);
+      // og:title is preferred over title.
+      if ($item !== NULL && $item->getAttribute('property') === 'og:title') {
+        return $item->getAttribute('content');
+      }
+    }
+    // Fallback to title.
+    if ($item = $dom->getElementsByTagName('title')->item(0)) {
+      return $item->textContent;
+    }
+    return '';
+  }
+```
 
 ```php
 DOM\Document; 
