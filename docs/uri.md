@@ -80,6 +80,21 @@ $uri->getScheme(); // https
 $uri->toString(); // https://phpbergen.no/example
 ```
 
+### Credentials
+
+```php
+$login = Uri::parse('https://helge:1234@phpbergen.no/example');
+$login->getUsername(); // helge 
+$login->getPassword(); // 1234
+```
+
+### Query parameters
+
+```php
+$query = Uri::parse('https://helge:1234@phpbergen.no/member?name=steinmb');
+$query->getQuery(); // name=steinmb
+```
+
 ## References
 
 * [PHP RFC: Add RFC 3986 and WHATWG URL compliant API](https://wiki.php.net/rfc/url_parsing_api)
