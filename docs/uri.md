@@ -65,16 +65,19 @@ echo $url->toString(), PHP_EOL;
 echo $url->toRawString(), PHP_EOL;
 ```
 
-Result:
+### Results:
+
 ```
 https://thephp.foundation/sponsor/
 HTTPS://thephp.foundation/sp%6Fnsor/
 ```
 
 ```php
-$uri->getHost();
-$uri->getScheme();
-$uri->getPort();
+$uri = Uri::parse('https://phpbergen.no/example');
+$uri->getPath(); // /example
+$uri->getHost(); // phpbergen.no
+$uri->getScheme(); // https
+$uri->toString(); // https://phpbergen.no/example
 ```
 
 ## References
