@@ -23,7 +23,7 @@ Was [introduced in PHP 8.5](https://wiki.php.net/rfc/url_parsing_api). An RFC 39
 * URL (Uniform Resource Locator): A subset of URIs that specify their location: `https://phpbergen.no`
 * URN: A subset of URIs that are globally unique within defined namespaces (e.g. urn:isbn:0451450523)
 
-<img src="images/iri_venn_diagramm.svg" alt="URL Parsing API" width="600">
+<img src="../images/iri_venn_diagramm.svg" alt="URL Parsing API" width="600">
 The image is reused from https://wiki.selfhtml.org/wiki/URN.
 
 ### WHATWG
