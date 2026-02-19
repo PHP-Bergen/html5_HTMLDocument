@@ -38,7 +38,7 @@ A [living standard](https://url.spec.whatwg.org/#title), this is what is followe
 * These two commonly used standards are incompatible with each other.
 * PHP uses [uriparser](https://uriparser.github.io) that is a strictly RFC 3986 compliant URI parsing and handling library written in C99.
 
-## [> URI/URL examples](uri_examples.md)
+## [> URI/URL examples](../uri_examples.md)
 
 ## References
 
